@@ -1,4 +1,5 @@
 # Introduction
+This is self learning blog
 ## front-end
 semantic-ui + jQuery
 ## back-end
