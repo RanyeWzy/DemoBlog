@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="admin/_fragments :: head(~{::title})"><title>Admin</title></head>
+<body>
+<!--导航-->
+<nav th:replace="admin/_fragments :: menu(0)"></nav>
+
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui success large message">
+            <h3>Hi,</h3>
+            <p>Wecome</p>
+        </div>
+
+        <img src="/img/background/1.jpg" alt="" class="ui rounded bordered fluid image">
+    </div>
+</div>
+
+
+<!--底部-->
+<footer th:replace="admin/_fragments :: footer"></footer>
+<th:block th:replace="admin/_fragments :: script"></th:block>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+
+
+</script>
+</body>
+</html>
